@@ -1,0 +1,32 @@
+{
+  "name": "codece",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "nodemon --trace-warnings",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "codeceptjs-init": "codeceptjs init",
+    "codeceptjs": "codeceptjs run --steps",
+    "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
+    "codeceptjs:ui": "codecept-ui --app",
+    "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+    "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+    "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@codeceptjs/configure": "^0.6.2",
+    "@codeceptjs/examples": "^1.2.1",
+    "@codeceptjs/ui": "^0.4.6",
+    "codeceptjs": "^3.0.7",
+    "playwright": "^1.13.1"
+  },
+  "dependencies": {
+    "@types/node": "^16.4.8",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  }
+}
