@@ -20,16 +20,5 @@ exports.config = {
   bootstrap: null,
   mocha: {},
   name: "codece",
-  plugins: {
-    pauseOnFail: {},
-    retryFailedStep: {
-      enabled: true,
-    },
-    tryTo: {
-      enabled: true,
-    },
-    screenshotOnFail: {
-      enabled: true,
-    },
-  },
+  plugins: {},
 };
